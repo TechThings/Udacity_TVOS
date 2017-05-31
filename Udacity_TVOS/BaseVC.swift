@@ -14,11 +14,11 @@ class BaseVC: UIViewController {
         super.viewDidLoad()
         
         let tapGestureRec = UITapGestureRecognizer(target: self, action: #selector(BaseVC.menuButtonPressed(_:)))
-        tapGestureRec.allowedPressTypes = [NSNumber(integer: UIPressType.Menu.rawValue)]
+        tapGestureRec.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue as Int)]
         view.addGestureRecognizer(tapGestureRec)
     }
     
-    func menuButtonPressed(gesture: UITapGestureRecognizer) {
-        navigationController?.popViewControllerAnimated(true)
+    func menuButtonPressed(_ gesture: UITapGestureRecognizer) {
+        navigationController?.popViewController(animated: true)
     }
 }

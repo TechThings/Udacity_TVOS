@@ -22,24 +22,24 @@ class VideoPlayerVC: AVPlayerViewController {
         
         playWithVideoId((item.snippet.resourceId?.videoId)!)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(VideoPlayerVC.audioStateChanged), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(VideoPlayerVC.audioStateChanged), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
     }
     
     func createTapGestures() {
         let tapMenuGestureRec = UITapGestureRecognizer(target: self, action: #selector(VideoPlayerVC.menuButtonPressed(_:)))
-        tapMenuGestureRec.allowedPressTypes = [NSNumber(integer: UIPressType.Menu.rawValue)]
+        tapMenuGestureRec.allowedPressTypes = [NSNumber(value: UIPressType.menu.rawValue as Int)]
         view.addGestureRecognizer(tapMenuGestureRec)
         
         let tapPlayGestureRec = UITapGestureRecognizer(target: self, action: #selector(VideoPlayerVC.playButtonPressed(_:)))
-        tapPlayGestureRec.allowedPressTypes = [NSNumber(integer: UIPressType.PlayPause.rawValue)]
+        tapPlayGestureRec.allowedPressTypes = [NSNumber(value: UIPressType.playPause.rawValue as Int)]
         view.addGestureRecognizer(tapPlayGestureRec)
     }
     
-    func menuButtonPressed(gesture: UITapGestureRecognizer) {
-        navigationController?.popViewControllerAnimated(true)
+    func menuButtonPressed(_ gesture: UITapGestureRecognizer) {
+        navigationController?.popViewController(animated: true)
     }
     
-    func playButtonPressed(gesture: UITapGestureRecognizer) {
+    func playButtonPressed(_ gesture: UITapGestureRecognizer) {
         avPlayer.rate == 0 ? avPlayer.play() : avPlayer.pause()
     }
     
@@ -50,23 +50,22 @@ class VideoPlayerVC: AVPlayerViewController {
             item = playlistItemArray[index]
             playWithVideoId(item.snippet.resourceId!.videoId)
         } else {
-            navigationController?.popViewControllerAnimated(true)
+            navigationController?.popViewController(animated: true)
         }
     }
     
-    func playWithVideoId(videoId :String) {
+    func playWithVideoId(_ videoId :String) {
         SVProgressHUD.show()
-        let priority = DISPATCH_QUEUE_PRIORITY_HIGH
-        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+        DispatchQueue.global(qos: DispatchQoS.QoSClass.default).async {
             let youTubeString : String = "https://www.youtube.com/watch?v=" + (self.item.snippet.resourceId?.videoId)!
-            let videos : NSDictionary = HCYoutubeParser.h264videosWithYoutubeURL(NSURL(string: youTubeString))
+            let videos : NSDictionary = HCYoutubeParser.h264videos(withYoutubeURL: (URL(string: youTubeString)))! as NSDictionary
             let urlString : String = videos["medium"] as! String//hd720
-            let asset = AVAsset(URL: NSURL(string: urlString)!)
-            dispatch_async(dispatch_get_main_queue(), {
+            let asset = AVAsset(url: URL(string: urlString)!)
+            DispatchQueue.main.async(execute: {
                 let avPlayerItem = AVPlayerItem(asset:asset)
                 self.avPlayer = AVPlayer(playerItem: avPlayerItem)
                 let avPlayerLayer  = AVPlayerLayer(player: self.avPlayer)
-                avPlayerLayer.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height);
+                avPlayerLayer.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height);
                 self.view.layer.addSublayer(avPlayerLayer)
                 
                 let playerViewController = AVPlayerViewController()
@@ -74,7 +73,7 @@ class VideoPlayerVC: AVPlayerViewController {
                 
                 self.addChildViewController(playerViewController)
                 self.view.addSubview(playerViewController.view)
-                playerViewController.didMoveToParentViewController(self)
+                playerViewController.didMove(toParentViewController: self)
                 
                 self.avPlayer.play()
                 SVProgressHUD.dismiss()

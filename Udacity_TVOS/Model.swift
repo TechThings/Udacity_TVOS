@@ -8,6 +8,12 @@
 
 import Foundation
 
+extension Array {
+    func filterNils<T>(_ array:[T?]) -> [T] {
+        return array.filter { $0 != nil }.map { $0! }
+    }
+}
+
 struct Playlist {
     var etag :String
     var items :[Item]
@@ -18,10 +24,10 @@ struct Playlist {
     init(dictionary :NSDictionary){
         etag = dictionary[Key.etag.rawValue] as! String
         kind = dictionary[Key.etag.rawValue] as! String
-        if let obj = dictionary[Key.nextPageToken.rawValue] {
-            nextPageToken = obj as? String
-        }
         
+        let obj = dictionary[Key.nextPageToken.rawValue]
+        nextPageToken = obj as? String
+ 
         pageInfo = PageInfo(dictionary: dictionary[Key.pageInfo.rawValue] as! NSDictionary)
         
         var tmpArray = [Item]()
@@ -29,7 +35,7 @@ struct Playlist {
             let item = Item(dictionary: dictionaryObject)
             tmpArray.append(item)
         }
-        items = tmpArray
+        items = tmpArray.filterNils(tmpArray)
     }
 }
 
@@ -61,9 +67,15 @@ struct Snippet {
         channelId = dictioanry[Key.channelId.rawValue] as! String
         channelTitle = dictioanry[Key.channelTitle.rawValue] as! String
         description = dictioanry[Key.description.rawValue] as! String
+       
         if let obj = dictioanry[Key.localized.rawValue] {
-            localized = Localized(dictionary: obj as! NSDictionary)
+            
+            if let _obj : NSDictionary = obj as! NSDictionary {
+                localized = Localized(dictionary: _obj)
+            }
+            
         }
+        
         publishedAt = dictioanry[Key.publishedAt.rawValue] as! String
         thumbnails = Thumbnails(dictioanry: dictioanry[Key.thumbnails.rawValue] as! NSDictionary)
         title = dictioanry[Key.title.rawValue] as! String

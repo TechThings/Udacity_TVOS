@@ -8,64 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		333D867C1D31C74C0069E5A7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D867B1D31C74C0069E5A7 /* Model.swift */; };
-		333D867D1D31C74C0069E5A7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D867B1D31C74C0069E5A7 /* Model.swift */; };
-		333D867E1D31C74C0069E5A7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333D867B1D31C74C0069E5A7 /* Model.swift */; };
 		334174011D370F6600AC53BE /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334174001D370F6600AC53BE /* VideoPlayerVC.swift */; };
-		334174021D370F6600AC53BE /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334174001D370F6600AC53BE /* VideoPlayerVC.swift */; };
-		334174031D370F6600AC53BE /* VideoPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334174001D370F6600AC53BE /* VideoPlayerVC.swift */; };
 		334174051D37240700AC53BE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 334174041D37240700AC53BE /* AVFoundation.framework */; };
 		334174091D37245200AC53BE /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174081D37245200AC53BE /* HCYoutubeParser.m */; };
-		3341740A1D37245200AC53BE /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174081D37245200AC53BE /* HCYoutubeParser.m */; };
-		3341740B1D37245200AC53BE /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174081D37245200AC53BE /* HCYoutubeParser.m */; };
 		3341740D1D38CD0300AC53BE /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341740C1D38CD0300AC53BE /* BaseVC.swift */; };
-		3341740E1D38CD0300AC53BE /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341740C1D38CD0300AC53BE /* BaseVC.swift */; };
-		3341740F1D38CD0300AC53BE /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3341740C1D38CD0300AC53BE /* BaseVC.swift */; };
 		3341741B1D39805F00AC53BE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174121D39805F00AC53BE /* SVIndefiniteAnimatedView.m */; };
-		3341741C1D39805F00AC53BE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174121D39805F00AC53BE /* SVIndefiniteAnimatedView.m */; };
-		3341741D1D39805F00AC53BE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174121D39805F00AC53BE /* SVIndefiniteAnimatedView.m */; };
 		3341741E1D39805F00AC53BE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174141D39805F00AC53BE /* SVProgressAnimatedView.m */; };
-		3341741F1D39805F00AC53BE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174141D39805F00AC53BE /* SVProgressAnimatedView.m */; };
-		334174201D39805F00AC53BE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174141D39805F00AC53BE /* SVProgressAnimatedView.m */; };
 		334174211D39805F00AC53BE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 334174161D39805F00AC53BE /* SVProgressHUD.bundle */; };
-		334174221D39805F00AC53BE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 334174161D39805F00AC53BE /* SVProgressHUD.bundle */; };
-		334174231D39805F00AC53BE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 334174161D39805F00AC53BE /* SVProgressHUD.bundle */; };
 		334174241D39805F00AC53BE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174181D39805F00AC53BE /* SVProgressHUD.m */; };
-		334174251D39805F00AC53BE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174181D39805F00AC53BE /* SVProgressHUD.m */; };
-		334174261D39805F00AC53BE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 334174181D39805F00AC53BE /* SVProgressHUD.m */; };
 		334174271D39805F00AC53BE /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3341741A1D39805F00AC53BE /* SVRadialGradientLayer.m */; };
-		334174281D39805F00AC53BE /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3341741A1D39805F00AC53BE /* SVRadialGradientLayer.m */; };
-		334174291D39805F00AC53BE /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3341741A1D39805F00AC53BE /* SVRadialGradientLayer.m */; };
 		3383D56C1D36EF8400C8AEF4 /* PlaylistItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D56B1D36EF8400C8AEF4 /* PlaylistItemsVC.swift */; };
-		3383D56D1D36EF8400C8AEF4 /* PlaylistItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D56B1D36EF8400C8AEF4 /* PlaylistItemsVC.swift */; };
-		3383D56E1D36EF8400C8AEF4 /* PlaylistItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3383D56B1D36EF8400C8AEF4 /* PlaylistItemsVC.swift */; };
 		338EE43A1D2F988A00DD6C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE4391D2F988A00DD6C44 /* AppDelegate.swift */; };
 		338EE43C1D2F988A00DD6C44 /* PlaylistsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE43B1D2F988A00DD6C44 /* PlaylistsVC.swift */; };
 		338EE43F1D2F988A00DD6C44 /* Udacity_TVOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 338EE43D1D2F988A00DD6C44 /* Udacity_TVOS.xcdatamodeld */; };
 		338EE4421D2F988A00DD6C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 338EE4401D2F988A00DD6C44 /* Main.storyboard */; };
 		338EE4441D2F988A00DD6C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338EE4431D2F988A00DD6C44 /* Assets.xcassets */; };
-		338EE44F1D2F988B00DD6C44 /* Udacity_TVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE44E1D2F988B00DD6C44 /* Udacity_TVOSTests.swift */; };
-		338EE45A1D2F988B00DD6C44 /* Udacity_TVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE4591D2F988B00DD6C44 /* Udacity_TVOSUITests.swift */; };
 		338EE4681D30721400DD6C44 /* YoutubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE4671D30721400DD6C44 /* YoutubeAPI.swift */; };
-		338EE4691D30721400DD6C44 /* YoutubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE4671D30721400DD6C44 /* YoutubeAPI.swift */; };
-		338EE46A1D30721400DD6C44 /* YoutubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338EE4671D30721400DD6C44 /* YoutubeAPI.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		338EE44B1D2F988B00DD6C44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 338EE42E1D2F988A00DD6C44 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 338EE4351D2F988A00DD6C44;
-			remoteInfo = Udacity_TVOS;
-		};
-		338EE4561D2F988B00DD6C44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 338EE42E1D2F988A00DD6C44 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 338EE4351D2F988A00DD6C44;
-			remoteInfo = Udacity_TVOS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		333D867B1D31C74C0069E5A7 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -93,10 +52,8 @@
 		338EE4411D2F988A00DD6C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		338EE4431D2F988A00DD6C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338EE4451D2F988A00DD6C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		338EE44A1D2F988B00DD6C44 /* Udacity_TVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Udacity_TVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		338EE44E1D2F988B00DD6C44 /* Udacity_TVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Udacity_TVOSTests.swift; sourceTree = "<group>"; };
 		338EE4501D2F988B00DD6C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		338EE4551D2F988B00DD6C44 /* Udacity_TVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Udacity_TVOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		338EE4591D2F988B00DD6C44 /* Udacity_TVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Udacity_TVOSUITests.swift; sourceTree = "<group>"; };
 		338EE45B1D2F988B00DD6C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338EE4671D30721400DD6C44 /* YoutubeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeAPI.swift; sourceTree = "<group>"; };
@@ -108,20 +65,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				334174051D37240700AC53BE /* AVFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		338EE4471D2F988B00DD6C44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		338EE4521D2F988B00DD6C44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,8 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				338EE4361D2F988A00DD6C44 /* Udacity_TVOS.app */,
-				338EE44A1D2F988B00DD6C44 /* Udacity_TVOSTests.xctest */,
-				338EE4551D2F988B00DD6C44 /* Udacity_TVOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,42 +183,6 @@
 			productReference = 338EE4361D2F988A00DD6C44 /* Udacity_TVOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		338EE4491D2F988B00DD6C44 /* Udacity_TVOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 338EE4611D2F988B00DD6C44 /* Build configuration list for PBXNativeTarget "Udacity_TVOSTests" */;
-			buildPhases = (
-				338EE4461D2F988B00DD6C44 /* Sources */,
-				338EE4471D2F988B00DD6C44 /* Frameworks */,
-				338EE4481D2F988B00DD6C44 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				338EE44C1D2F988B00DD6C44 /* PBXTargetDependency */,
-			);
-			name = Udacity_TVOSTests;
-			productName = Udacity_TVOSTests;
-			productReference = 338EE44A1D2F988B00DD6C44 /* Udacity_TVOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		338EE4541D2F988B00DD6C44 /* Udacity_TVOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 338EE4641D2F988B00DD6C44 /* Build configuration list for PBXNativeTarget "Udacity_TVOSUITests" */;
-			buildPhases = (
-				338EE4511D2F988B00DD6C44 /* Sources */,
-				338EE4521D2F988B00DD6C44 /* Frameworks */,
-				338EE4531D2F988B00DD6C44 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				338EE4571D2F988B00DD6C44 /* PBXTargetDependency */,
-			);
-			name = Udacity_TVOSUITests;
-			productName = Udacity_TVOSUITests;
-			productReference = 338EE4551D2F988B00DD6C44 /* Udacity_TVOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -290,14 +195,7 @@
 					338EE4351D2F988A00DD6C44 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = K8YR4WT3S5;
-					};
-					338EE4491D2F988B00DD6C44 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 338EE4351D2F988A00DD6C44;
-					};
-					338EE4541D2F988B00DD6C44 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = 338EE4351D2F988A00DD6C44;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -315,8 +213,6 @@
 			projectRoot = "";
 			targets = (
 				338EE4351D2F988A00DD6C44 /* Udacity_TVOS */,
-				338EE4491D2F988B00DD6C44 /* Udacity_TVOSTests */,
-				338EE4541D2F988B00DD6C44 /* Udacity_TVOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,22 +225,6 @@
 				338EE4441D2F988A00DD6C44 /* Assets.xcassets in Resources */,
 				334174211D39805F00AC53BE /* SVProgressHUD.bundle in Resources */,
 				338EE4421D2F988A00DD6C44 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		338EE4481D2F988B00DD6C44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				334174221D39805F00AC53BE /* SVProgressHUD.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		338EE4531D2F988B00DD6C44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				334174231D39805F00AC53BE /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,56 +251,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		338EE4461D2F988B00DD6C44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				333D867D1D31C74C0069E5A7 /* Model.swift in Sources */,
-				3341740A1D37245200AC53BE /* HCYoutubeParser.m in Sources */,
-				3383D56D1D36EF8400C8AEF4 /* PlaylistItemsVC.swift in Sources */,
-				3341741C1D39805F00AC53BE /* SVIndefiniteAnimatedView.m in Sources */,
-				338EE4691D30721400DD6C44 /* YoutubeAPI.swift in Sources */,
-				3341741F1D39805F00AC53BE /* SVProgressAnimatedView.m in Sources */,
-				338EE44F1D2F988B00DD6C44 /* Udacity_TVOSTests.swift in Sources */,
-				334174251D39805F00AC53BE /* SVProgressHUD.m in Sources */,
-				3341740E1D38CD0300AC53BE /* BaseVC.swift in Sources */,
-				334174021D370F6600AC53BE /* VideoPlayerVC.swift in Sources */,
-				334174281D39805F00AC53BE /* SVRadialGradientLayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		338EE4511D2F988B00DD6C44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				333D867E1D31C74C0069E5A7 /* Model.swift in Sources */,
-				3341740B1D37245200AC53BE /* HCYoutubeParser.m in Sources */,
-				3383D56E1D36EF8400C8AEF4 /* PlaylistItemsVC.swift in Sources */,
-				3341741D1D39805F00AC53BE /* SVIndefiniteAnimatedView.m in Sources */,
-				338EE46A1D30721400DD6C44 /* YoutubeAPI.swift in Sources */,
-				334174201D39805F00AC53BE /* SVProgressAnimatedView.m in Sources */,
-				338EE45A1D2F988B00DD6C44 /* Udacity_TVOSUITests.swift in Sources */,
-				334174261D39805F00AC53BE /* SVProgressHUD.m in Sources */,
-				3341740F1D38CD0300AC53BE /* BaseVC.swift in Sources */,
-				334174031D370F6600AC53BE /* VideoPlayerVC.swift in Sources */,
-				334174291D39805F00AC53BE /* SVRadialGradientLayer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		338EE44C1D2F988B00DD6C44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 338EE4351D2F988A00DD6C44 /* Udacity_TVOS */;
-			targetProxy = 338EE44B1D2F988B00DD6C44 /* PBXContainerItemProxy */;
-		};
-		338EE4571D2F988B00DD6C44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 338EE4351D2F988A00DD6C44 /* Udacity_TVOS */;
-			targetProxy = 338EE4561D2F988B00DD6C44 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		338EE4401D2F988A00DD6C44 /* Main.storyboard */ = {
@@ -530,6 +361,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Udacity_TVOS/Udacity_TVOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -545,62 +377,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "inailuy.Udacity-TVOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Udacity_TVOS/Udacity_TVOS-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		338EE4621D2F988B00DD6C44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Udacity_TVOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "inailuy.Udacity-TVOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Udacity_TVOS/Udacity_TVOSTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Udacity_TVOS.app/Udacity_TVOS";
-			};
-			name = Debug;
-		};
-		338EE4631D2F988B00DD6C44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Udacity_TVOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "inailuy.Udacity-TVOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Udacity_TVOS/Udacity_TVOSTests-Bridging-Header.h";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Udacity_TVOS.app/Udacity_TVOS";
-			};
-			name = Release;
-		};
-		338EE4651D2F988B00DD6C44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Udacity_TVOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "inailuy.Udacity-TVOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Udacity_TVOS/Udacity_TVOSUITests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_TARGET_NAME = Udacity_TVOS;
-			};
-			name = Debug;
-		};
-		338EE4661D2F988B00DD6C44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = Udacity_TVOSUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "inailuy.Udacity-TVOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Udacity_TVOS/Udacity_TVOSUITests-Bridging-Header.h";
-				TEST_TARGET_NAME = Udacity_TVOS;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -621,24 +398,6 @@
 			buildConfigurations = (
 				338EE45F1D2F988B00DD6C44 /* Debug */,
 				338EE4601D2F988B00DD6C44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		338EE4611D2F988B00DD6C44 /* Build configuration list for PBXNativeTarget "Udacity_TVOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				338EE4621D2F988B00DD6C44 /* Debug */,
-				338EE4631D2F988B00DD6C44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		338EE4641D2F988B00DD6C44 /* Build configuration list for PBXNativeTarget "Udacity_TVOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				338EE4651D2F988B00DD6C44 /* Debug */,
-				338EE4661D2F988B00DD6C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

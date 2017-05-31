@@ -13,7 +13,7 @@ class PlaylistItemsVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var imageView: UIImageView!
     var selectedItem :Item?
-    var selectedIndexPath :NSIndexPath?
+    var selectedIndexPath :IndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,43 +21,43 @@ class PlaylistItemsVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         YoutubeAPI.sharedInstance.getPlaylistItems((selectedItem?.id)!)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NSNotificationCenter.defaultCenter().addObserver(
+        NotificationCenter.default.addObserver(
             self,
             selector: #selector(playlistFinishedLoading),
-            name: YoutubePostNotification,
+            name: NSNotification.Name(rawValue: YoutubePostNotification),
             object: nil)
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if segue.identifier == "videoSegue" {
-            let vc = segue.destinationViewController as! VideoPlayerVC
+            let vc = segue.destination as! VideoPlayerVC
             let item = YoutubeAPI.sharedInstance.playlistItems.items[selectedIndexPath!.row] as Item
             vc.item = item
             vc.index = selectedIndexPath!.row
         }
     }
     
-    func tableCellTapped(gesture: UITapGestureRecognizer) {
+    func tableCellTapped(_ gesture: UITapGestureRecognizer) {
         if let cell = gesture.view as? UITableViewCell {
-            selectedIndexPath = tableView.indexPathForCell(cell)
-            performSegueWithIdentifier("videoSegue", sender: nil)
+            selectedIndexPath = tableView.indexPath(for: cell)
+            performSegue(withIdentifier: "videoSegue", sender: nil)
         }
     }
     
-    @objc func playlistFinishedLoading(notification: NSNotification){
-        dispatch_async(dispatch_get_main_queue(), {
+    @objc func playlistFinishedLoading(_ notification: Notification){
+        DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
         })
     }
     //MARK: TableView DataSource/Delegate
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = 0
         if YoutubeAPI.sharedInstance.playlistItems != nil {
             count = YoutubeAPI.sharedInstance.playlistItems.items.count
@@ -65,21 +65,21 @@ class PlaylistItemsVC: BaseVC, UITableViewDelegate, UITableViewDataSource {
         return count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = YoutubeAPI.sharedInstance.playlistItems.items[indexPath.row] as Item
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("playlistItemId")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "playlistItemId")
         cell?.textLabel?.text = item.snippet.title
         
         if cell!.gestureRecognizers?.count == nil {
             let tap = UITapGestureRecognizer(target: self, action: #selector(PlaylistItemsVC.tableCellTapped(_:)))
-            tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+            tap.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue as Int)]
             cell!.addGestureRecognizer(tap)
         }
         return cell!
     }
     
-    func tableView(tableView: UITableView, didUpdateFocusInContext context: UITableViewFocusUpdateContext, withAnimationCoordinator coordinator: UIFocusAnimationCoordinator) {
+    func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         let index = context.nextFocusedIndexPath
         if index != nil {
             let item = YoutubeAPI.sharedInstance.playlistItems.items[index!.row] as Item
